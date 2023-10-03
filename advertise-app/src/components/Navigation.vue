@@ -161,7 +161,8 @@ export default {
                         top: 50px;
                         z-index: 99999;
                         float: left;
-                        background: #2d2d2d !important;
+                        // background: #2d2d2d !important;
+                        background: #009688 !important;
                         box-shadow: 0 3px 4px 1px rgba(0, 0, 0, 0.2);
                         border-bottom-right-radius: 3px;
                         border-bottom-left-radius: 3px;
@@ -176,7 +177,7 @@ export default {
                             border-bottom: 1px solid #222;
                             border-top: 1px solid #9a9898;
                             font-family: Oswald, arial, Georgia, serif;
-                            color: hsl(0, 1%, 60%);
+                            color: hsl(0, 3%, 88%);
                             transition: color 3s, transform 1s;
 
                             .drop-down-link {
