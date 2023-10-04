@@ -102,12 +102,11 @@ export default {
             justify-content: center;
             align-items: center;
             flex: 1;
+            cursor: pointer;
 
             .social-item {
-                margin: 2px;
+                margin: 2px 8px 2px 2px;
             }
-
-
         }
 
         .contact {
@@ -117,6 +116,7 @@ export default {
             flex: 10;
             font-size: 14px;
             border-left: 1px solid #585656;
+            cursor: default;
 
             .phone {
                 margin-right: 15px;
