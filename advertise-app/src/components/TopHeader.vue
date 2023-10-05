@@ -6,8 +6,8 @@
             </router-link>
         </div>
         <div class="header-center">
-            <h2>CÔNG TY TNHH TOẢN QUỐC NGUYÊN</h2>
-            <p>UY TÍN VỚI KHÁCH HÀNG LÀ LỢI NHUẬN CỦA CHÚNG TÔI</p>
+            <h2 style="color: #009688;">CÔNG TY TNHH TOẢN QUỐC NGUYÊN</h2>
+            <strong>UY TÍN VỚI KHÁCH HÀNG LÀ LỢI NHUẬN CỦA CHÚNG TÔI</strong>
         </div>
         <div class="header-right">
             <div class="social">
@@ -60,7 +60,6 @@ export default {
         padding: 0;
 
         .logo-image {
-            width: 100%;
             height: auto;
             max-height: 100px;
             margin: 0;
@@ -71,29 +70,29 @@ export default {
         display: block;
 
         @media (min-width: 1200px) {
-            flex: 6;
+            flex: 7;
         }
 
         @media (min-width: 992px) {
-            flex: 5;
+            flex: 6;
         }
 
         @media (min-width: 768px) {
-            flex: 4;
+            flex: 5;
         }
 
         @media (min-width: 600px) {
-            flex: 3;
+            flex: 4;
         }
 
         @media (max-width: 600px) {
-            flex: 3;
+            flex: 4;
             font-size: small;
         }
     }
 
     .header-right {
-        flex: 1;
+        flex: 2;
         display: flex;
 
         .social {
@@ -112,7 +111,7 @@ export default {
         .contact {
             display: flex;
             flex-direction: column;
-            align-items: start;
+            align-items: flex-start;
             flex: 10;
             font-size: 14px;
             border-left: 1px solid #585656;
@@ -122,8 +121,8 @@ export default {
                 margin-right: 15px;
                 display: flex;
 
-                .phone-1, .phone-2 {
-                    margin-left: 10px;
+                .phone-1 {
+                    margin-right: 5px;
                 }
             }
 
@@ -145,7 +144,6 @@ export default {
                     width: 24px;
                     height: 24px;
                     float: left;
-                    margin-left: 10px;
                 }
 
                 .zalo-info {

@@ -18,28 +18,77 @@
                     <div class="container">
                         <ul>
                             <li>
-                                <router-link class="link">KỲ SƠN Pano Led trung tâm thành phố (<span class="post-date">30/05/2023</span>)</router-link>
+                                <router-link class="link">KỲ SƠN Pano Led trung tâm thành phố (<span
+                                        class="post-date">30/05/2023</span>)</router-link>
                             </li>
                             <li>
-                                <router-link class="link">KỲ SƠN Pano Led trung tâm thành phố (<span class="post-date">30/05/2023</span>)</router-link>
+                                <router-link class="link">KỲ SƠN Pano Led trung tâm thành phố (<span
+                                        class="post-date">30/05/2023</span>)</router-link>
                             </li>
                             <li>
-                                <router-link class="link">KỲ SƠN Pano Led trung tâm thành phố (<span class="post-date">30/05/2023</span>)</router-link>
+                                <router-link class="link">KỲ SƠN Pano Led trung tâm thành phố (<span
+                                        class="post-date">30/05/2023</span>)</router-link>
                             </li>
                             <li>
-                                <router-link class="link">KỲ SƠN Pano Led trung tâm thành phố (<span class="post-date">30/05/2023</span>)</router-link>
+                                <router-link class="link">KỲ SƠN Pano Led trung tâm thành phố (<span
+                                        class="post-date">30/05/2023</span>)</router-link>
                             </li>
                             <li>
-                                <router-link class="link">Tuyển dụng Lái xe, Thợ quảng cáo và Học việc (<span class="post-date">30/05/2023</span>)</router-link>
+                                <router-link class="link">Tuyển dụng Lái xe, Thợ quảng cáo và Học việc (<span
+                                        class="post-date">30/05/2023</span>)</router-link>
+                            </li>
+                            <li>
+                                <router-link class="link">Tuyển dụng Lái xe, Thợ quảng cáo và Học việc (<span
+                                        class="post-date">30/05/2023</span>)</router-link>
+                            </li>
+                            <li>
+                                <router-link class="link">Tuyển dụng Lái xe, Thợ quảng cáo và Học việc (<span
+                                        class="post-date">30/05/2023</span>)</router-link>
+                            </li>
+                            <li>
+                                <router-link class="link">Tuyển dụng Lái xe, Thợ quảng cáo và Học việc (<span
+                                        class="post-date">30/05/2023</span>)</router-link>
+                            </li>
+                            <li>
+                                <router-link class="link">Tuyển dụng Lái xe, Thợ quảng cáo và Học việc (<span
+                                        class="post-date">30/05/2023</span>)</router-link>
+                            </li>
+                            <li>
+                                <router-link class="link">Tuyển dụng Lái xe, Thợ quảng cáo và Học việc (<span
+                                        class="post-date">30/05/2023</span>)</router-link>
+                            </li>
+                            <li>
+                                <router-link class="link">Tuyển dụng Lái xe, Thợ quảng cáo và Học việc (<span
+                                        class="post-date">30/05/2023</span>)</router-link>
+                            </li>
+                            <li>
+                                <router-link class="link">Tuyển dụng Lái xe, Thợ quảng cáo và Học việc (<span
+                                        class="post-date">30/05/2023</span>)</router-link>
+                            </li>
+                            <li>
+                                <router-link class="link">Tuyển dụng Lái xe, Thợ quảng cáo và Học việc (<span
+                                        class="post-date">30/05/2023</span>)</router-link>
+                            </li>
+                            <li>
+                                <router-link class="link">Tuyển dụng Lái xe, Thợ quảng cáo và Học việc (<span
+                                        class="post-date">30/05/2023</span>)</router-link>
+                            </li>
+                            <li>
+                                <router-link class="link">Tuyển dụng Lái xe, Thợ quảng cáo và Học việc (<span
+                                        class="post-date">30/05/2023</span>)</router-link>
                             </li>
                         </ul>
                     </div>
-                    <div class="adv-panel"></div>
+                    <div class="banner">
+                        <div class="adv">
+                            <img :src="imageUrl" alt="Quảng cáo">
+                        </div>
+                    </div>
                     <div class="tag"></div>
                 </div>
             </div>
             <div class="center-content">
-                center-content
+                <Home />
                 <router-view />
             </div>
             <div class="right-content">right-content</div>
@@ -48,8 +97,12 @@
 </template>
 
 <script>
+import Home from './Home.vue'
 export default {
     name: 'main-view',
+    components: {
+        Home
+    },
     data() {
         return {
             nav_history: ''
@@ -58,6 +111,9 @@ export default {
     computed: {
         hasNavHistory() {
             return this.nav_history.length != ''
+        },
+        imageUrl() {
+            return require('../assets/banner.png')
         }
     }
 
@@ -68,6 +124,7 @@ export default {
 .main-container {
     display: block;
     font-family: Tahoma, Arial, Verdana, sans-serif;
+    width: 100%;
 
     .navigation-history {
         background: #eee;
@@ -94,6 +151,7 @@ export default {
 
             .recent-activity {
                 display: block;
+                width: 100%;
 
                 .top {
                     padding-bottom: 5px;
@@ -103,7 +161,11 @@ export default {
 
                 .container {
                     padding: 10px 0;
+                    margin-bottom: 5px;
                     clear: both;
+                    border-bottom: 4px solid #333;
+                    max-height: 350px;
+                    overflow-y: scroll;
 
                     ul {
                         box-sizing: border-box;
@@ -120,10 +182,24 @@ export default {
                             cursor: pointer;
 
                             &::before {
-                                content: "\00b7"; /* Thêm dấu chấm (•) trước mỗi mục */
+                                content: "\00b7";
+                                /* Thêm dấu chấm (•) trước mỗi mục */
                                 margin-right: 8px;
                             }
                         }
+                    }
+                }
+
+                .banner {
+                    padding: 10px 0;
+                    clear: both;
+                    width: 100%;
+
+                    .adv {
+                        width: 100%;
+                        height: 600px;
+                        display: block;
+                        margin: 0 auto;
                     }
                 }
             }
@@ -131,13 +207,10 @@ export default {
 
         .center-content {
             flex: 4;
-            border-right: 1px solid #eaeaea;
-            border-left: 1px solid #eaeaea;
         }
 
         .right-content {
             flex: 2;
         }
     }
-}
-</style>
+}</style>
