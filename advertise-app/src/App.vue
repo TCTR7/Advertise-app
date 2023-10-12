@@ -22,7 +22,8 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "../public/assets/scss/common.scss";
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +38,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  height: 90%;
+  height: 100% !important;
   width: 95%;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   z-index: 1;
@@ -50,4 +51,17 @@ export default {
 .workshome {
   display: block;
 }
+
+.link {
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+
+.btn {
+  background-color: $main-color;
+  color: white;
+}
+
 </style>

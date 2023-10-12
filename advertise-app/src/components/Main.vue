@@ -137,7 +137,7 @@ export default {
     }
 
     .main-content {
-        margin: 20px auto 25px;
+        margin: 20px 0 0 ;
         position: relative;
         z-index: 0;
         display: flex;
@@ -183,7 +183,6 @@ export default {
 
                             &::before {
                                 content: "\00b7";
-                                /* Thêm dấu chấm (•) trước mỗi mục */
                                 margin-right: 8px;
                             }
                         }

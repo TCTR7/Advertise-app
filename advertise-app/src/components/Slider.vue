@@ -7,7 +7,6 @@
                         <img :src="slideInfo.image" alt="">
                         <div class="content">
                             <router-link :to="{}">{{ slideInfo.content }}</router-link>
-                            <p>{{ slideInfo.image }}</p>
                         </div>
                     </div>
                 </SplideSlide>
@@ -59,8 +58,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../public/assets/scss/common.scss";
 .slider-container {
     overflow: hidden;
+    margin: 20px;
+    zoom: 1;
 
     .slider-content {
         position: relative;
@@ -82,7 +84,7 @@ export default {
                 right: 20px;
                 bottom: 40px;
                 text-align: justify;
-                background-color: #009688;
+                background-color: $main-color;
                 padding: 7px 7px 12px;
                 color: white;
                 cursor: pointer;

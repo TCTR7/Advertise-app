@@ -95,9 +95,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../public/assets/scss/common.scss";
 .navigation {
     background: #2c2c2c;
-    background: #009688;
+    background: $main-color;
     color: #fcfcfc !important;
     margin: 0 auto;
     height: 60px;
@@ -162,7 +163,7 @@ export default {
                         z-index: 99999;
                         float: left;
                         // background: #2d2d2d !important;
-                        background: #009688 !important;
+                        background: $main-color !important;
                         box-shadow: 0 3px 4px 1px rgba(0, 0, 0, 0.2);
                         border-bottom-right-radius: 3px;
                         border-bottom-left-radius: 3px;

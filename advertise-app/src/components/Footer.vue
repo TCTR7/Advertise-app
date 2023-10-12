@@ -1,5 +1,7 @@
 <template>
-    <div></div>
+    <div style="height: 400px; background-color: blue; margin-top: 20px;">
+        This is Footer
+    </div>
 </template>
 
 <script>

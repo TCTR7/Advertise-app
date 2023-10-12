@@ -6,7 +6,7 @@
             </router-link>
         </div>
         <div class="header-center">
-            <h2 style="color: #009688;">CÔNG TY TNHH TOẢN QUỐC NGUYÊN</h2>
+            <h2>CÔNG TY TNHH TOẢN QUỐC NGUYÊN</h2>
             <strong>UY TÍN VỚI KHÁCH HÀNG LÀ LỢI NHUẬN CỦA CHÚNG TÔI</strong>
         </div>
         <div class="header-right">
@@ -46,6 +46,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../public/assets/scss/common.scss";
 .header-top {
     width: 100%;
     height: auto;
@@ -68,6 +69,9 @@ export default {
 
     .header-center {
         display: block;
+        h2 {
+            color: $main-color;
+        }
 
         @media (min-width: 1200px) {
             flex: 7;
